@@ -6,12 +6,12 @@ Single-cell RNA-sequencing analysis for the publication entitled: [Molecularly t
 
 **Please note** that this repository, even with the appropriate libraries and packages installed, will not operate independently. Due to size limitations, the **original datasets** are not included. However, for those who are interested, the *original published dataset* as well as the code are available [elsewhere](https://doi.org/10.5281/zenodo.8229544).
 
-At the moment this README is still under construction, more details to follow.
+**Disclaimer**: this README is still under construction.
 
 
 ## Project Organization
 ```
-.
+
 ├── R_figs_master.r/                                : pipeline control
 ├── Images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
@@ -23,15 +23,18 @@ At the moment this README is still under construction, more details to follow.
 ├── perform_liger.r                                 : Non-negative matrix factorization with liger for sample integration
 ├── calculate_nearest_neighbors.r                   : Cell group identification with weighted nearest neigbor
 ├── filter_sce.r                                    : Performing cluster exclusion and distant neighbor exclusion 
-├── perform_scmap.r                                 : subtype identification with scmap
+├── l23_scmap_assignment.r                          : subtype identification with scmap
 ├── get_the_figs.r                                  : Summary statistics, bootstrap analysis, UMAP plots and figure generation
-├── fig_3c.f                                        : XXX
-├── fig_s2_c_through_h.r                            : XXX
-├── fig_s2b.r                                       : XXX
-├── sig_s3_b_through_e.r                            : XX
+├── fig_3c.r                                        : correlation heatmap and bootstrap testing for cell type assignment
+├── fig_s2_c_through_h.r                            : Additional UMAP visualizations
+├── fig_s2b.r                                       : UMAP visulisation for reference data set.
+├── fig_s3_b_through_e.r                            : Bootstrap analysis for enrichment of interneuron groups across photoconversion conditions.
 ├── campari2_genome_construction.py                 : Constructs modified version of mouse genome to account for viral expression
 ├── single_cell_mapping_pipeline.py                 : Used to pass multiple files through the cellranger pipeline
+├── single_cell_variables.r                         : Stores variables parameters passed to the rest of the pipeline.
+├── get_path.r                                      : Simple file path construction function
 ├── LICENSE.md                                      : MIT License
 └── README.md                                       : Project description
 
+```
 
