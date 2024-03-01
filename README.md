@@ -12,7 +12,7 @@ Single-cell RNA-sequencing analysis for the publication entitled: [Molecularly t
 ## Project Organization
 ```
 
-├── R_figs_master.r/                                : pipeline control
+┌── R_figs_master.r/                                : pipeline control
 ├── Images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
 │   └── XXX.png
