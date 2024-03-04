@@ -11,7 +11,7 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 ```
 
 ┌── R_figs_master.r/                                : pipeline control
-├── Images/                                         : contains example images used for explanations within the README
+├── images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
 │   └── XXX.png
 |── generate_allen_data.r                           : formats refernce dataset
