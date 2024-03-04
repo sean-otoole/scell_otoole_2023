@@ -36,3 +36,6 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 
 ```
 
+![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png)
+
+![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png)
