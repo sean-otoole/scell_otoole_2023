@@ -39,6 +39,23 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 
 ## Genome Construction
 
+```{python}
+# adding a custom chromosome
+campari2 = ['V','Campari2','exon','1','3500','.','+','.',  ###first 8 elements, tab delimited
+            'gene_id "Campari2"',   ### remaining elements, semicolon delimited
+            ' gene_version "1"',
+            ' transcript_id "Campari2"',
+            ' transcript_version "1"',
+            ' gene_name "Campari2"',
+            ' gene_source "addgene"',
+            ' gene_biotype "protein_coding"',
+            ' transcript_name "Campari2"',
+            ' transcript_source "custom"',
+            ' transcript_biotype "protien_coding"',
+            ' protein_id "Campari2"',
+            ' tag "basic"']
+```
+
 ## Mapping and preprocessing the data
 
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/droplet_utils_example.png" height= 600>
