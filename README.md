@@ -37,16 +37,16 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 ```
 <br>
 
-          
+{% assign image_width = 500 %}
+{% assign image_height = 500 %}
 
-![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png)
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png" width="{{ image_width }}" height="{{ image_height }}">
 
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/dotplot_main.png" width="{{ image_width }}" height="{{ image_height }}">
 
-![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/dotplot_supp.png)
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png" width="{{ image_width }}" height="{{ image_height }}">
 
-![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png)
-
-![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/bootstrap_main.png)
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/bootstrap_main.png" width="{{ image_width }}" height="{{ image_height }}">
 
 ![Main Umaps Image ](https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_density_supp.png)
 
