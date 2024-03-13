@@ -62,9 +62,9 @@ Initial processing of the single-cell RNA-sequencing data, up until the construc
 
 ## Mapping and preprocessing the data
 
-<div style="text-align: center;">
-<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/droplet_utils_example.png" height= 600>
-</div>
+<p align="center">
+            <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/droplet_utils_example.png" height= "600" align = "middle">
+</p>
 
 Expression data was imported with the SCATER package. 59 Cells were distinguished from empty droplets with DropletUTILS, 60 using an FDR of 0.05% and a lower limit for cell detection that was calculated on a per dataset basis or set to the median UMI count for droplets greater than 10 UMIs. Cells with a mitochondrial read percentage greater than 20% as well as cells with read counts that were more than three standard deviations below the sample average were excluded. Feature selection and UMI correction were done with SCtransform from the Seurat package. 61,62 Initially, 2000 genes were selected and mitochondrial percentage, sample effects, 10x chemistry (v2 vs. v3), and total feature counts were regressed out. Selected genes were filtered to remove any genes that were differentially expressed between groups of cells separated by read count or mitochondrial percentage, thus reducing the impact of cell quality on the analysis. The final corrected UMI matrix was then used for alignment with a reference dataset. 
 
@@ -126,15 +126,21 @@ To align cells from this study with the reference dataset some portions of the d
 To align cells from this study with the reference dataset, 25 excluding L5 and L6 neurons, we used the Liger package 34 with a k-value of 12 and lambda-value of 10. These parameters were chosen based on how well groups were separated on a UMAP plot, as well as the expression of various markers normally enriched in each major cortical cell group (Figure S2A). Then, iNMF factors were used to assign each cell from this study to a cell group defined in the reference dataset (L4, L2/3, Sst etc.) using a weighted nearest neighbor algorithm. For each cell in our dataset, we determined the 10 nearest neighbors in the reference dataset, and each of these 10 neighbors were assigned a value corresponding to the inverse of the distance to the cell in our dataset. The 10 nearest neighbors were pooled by their cell group identity, and the inverse distance values summed across cell groups. Cell identity of our cell was defined as the cell group with the highest summed inverse distance value. The initial cell total was 65 002. However, we applied several filters to the dataset. First, since the initially assigned Pvalb group contained many cells that expressed excitatory neuron markers graphical clustering was used to subselect this group and isolate Pvalb positive neurons that were negative for excitatory markers. This eliminated 4762 cells from the dataset. Second, cells whose distance to the closest cell in the reference dataset exceeded 0.002 in the iNMF factor space were removed from the dataset, a filter that eliminated 9724 cells. Third, we excluded cell types that con-
 tained less than 300 cells across the entire dataset (eliminating 67 cells). In total 2353 (10.07%) L2/3 neurons were excluded from further analysis. The final cell count was 50 449.  
 
+<p align="center">
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/dotplot_supp.png" height= 600>
+</p>
 
 For subtype assignment within L2/3: Adamts2, Rrad, and Agmat cell type assign-ments were determined separately within the L2/3 group with scMAP 63 using the scmapCluster function; using scMAP’s selectFeatures function, 250 features (genes) were initially selected from the reference dataset, 8 of which were not present in our 10x dataset. This procedure uniquely assigned a cell type identity to all but 60 of the cells that remained unassigned and were excluded from further analysis. Unassigned cells had differing maximum cosine similarities, maximum correlations, or maximum rank order correlations with different L2/3 excitatory cell types. Thus, 242 genes were used (with no similarity cutoff) for cell type assignment. These parameters allowed for the assignment of L2/3 neurons to their corresponding cell types in the reference dataset 25 types (Figure 3). Expression values used in Figure 3 were adjusted with the ScaleData function from the Seurat package and regressed against: UMI count, mitochondrial percentage, sample identity, sequencing chemistry, and total feature count to remove unwanted sources of variance.
 
+<p align="center">
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png" height=600>
+</p>
 
 To quantify the gene expression similarity in the three cell types between our dataset and the reference dataset (Figure 3C), we used a bootstrap estimate of the similarity expected by chance and compared the actual similarity to this bootstrap estimate. We first computed the correlation between the gene expression vectors of all cells of a given cell type with the corresponding average expression vector of the same cell type in the reference dataset. We constructed the bootstrap estimate of random correlation by shuffling cell type identity and repeating the correlation analysis.
 
+<p align="center">
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png" height= 700>
+</p>
 
 ## Bootstrap analysis of cell type enrichment
 
