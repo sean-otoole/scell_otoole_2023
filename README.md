@@ -37,16 +37,26 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 ```
 <br
 
+## Genome Construction
+
 ## Mapping and preprocessing the data
 
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/droplet_utils_example.png" height= 600>
 
-## Identifing 
+##  Reference data set preparation
+
+## Data set integration and visualization 
 
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png" height= 700>
 
+## Assessing group assignment
+
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/dotplot_supp.png" height= 600>
 
+## Assessing type assignment
+
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png" height=600>
+
+## Bootstrap analysis of cell type enrichment
 
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/bootstrap_main.png" height=400>
