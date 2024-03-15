@@ -94,7 +94,7 @@ ___
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/figure_s3.png" height= 600>
 </p>
 
-### Abundance of major cell groups and L2/3 excitatory types and enrichment analysis for inhibitory neuron types. Related to Figures 2-4. 
+### Abundance of major cell groups and L2/3 excitatory types and enrichment analysis for inhibitory neuron types.
 
 **(A)** Abundance of each major cell group as shown in Figure 2A, across the three photoconversion groups and the three photoconversion types. mm: Mismatch; run: Running onsets; vis: Grating onsets; 1: Low photoconversion group; 2: Intermediate photoconversion group; 3: High photoconversion group. 
 **(B)** Enrichment for the Lamp5 cell type across photoconversion and labeling conditions. Z-score values are displayed for visuomotor mismatch (mismatch), running onset (running), and grating onset when stationary (grating) labeling experiments. Enrichment is calculated relative to the major inhibitory neuron groups only. 
