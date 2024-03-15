@@ -38,9 +38,16 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 ## Modified excerpts (figures and methods) from O'Toole et al. 2023 relevant to this repository
 
 <p align="center">
-<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/dotplot_supp.png" height= 600>
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png" height= 700>
 </p>
 
+### Single-cell RNA-sequencing of photoconverted cells
+**(A)** Uniform manifold approximation and projection (UMAP) of neurons isolated from the superficial cortical layers (L1, L2/3, and L4), based on the integrative non-negative matrix factorization (iNMF) vectors calculated from a shared projection of our data and a reference dataset.25 Major cell groups are labeled, and inferred cell type identity of L2/3 cells are color coded. Plot order is randomized, except for the L2/3 Rrad cell type that is plotted in the foreground due to its relative scarcity.
+**(B)** The L2/3 cluster with cells expressing one or more UMIs corresponding to Adamts2 highlighted. Note, the expression of Adamts2 overlaps with the Adamts2 cell type shown in (A), but the Adamts2 cell type is defined by the expression of a set of different genes of which Adamts2 is just one.
+**(C)** As in **(B)**, but for Agmat.
+**(D)** As in **(B)**, but for Rrad.
+
+***
 
 <p align="center">
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/heatmaps_main.png" height=600>
@@ -51,15 +58,7 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 **(B)** As in **(A)**, but for all L2/3 V1 excitatory neurons from a reference dataset.
 **(C)** Marker gene expression of L2/3 excitatory neurons (19,689) examined in this study (6,495 Adamts2, 12,143 Agmat, 991 Rrad) correlated with marker gene expression of all L2/3 V1 excitatory neurons from a reference dataset.25 Correlation of the gene expression vectors was calculated between individual neurons of this study with averaged expression vectors for each of the L2/3 excitatory types of the reference dataset (see STAR Methods). Assigned cell types of each neuron are indicated with color bars on top (this study) and left.25 To prevent aliasing, data are smoothed across cells with a window size of 20.
 
-<p align="center">
-<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/umap_main.png" height= 700>
-</p>
-
-### Single-cell RNA-sequencing of photoconverted cells
-**(A)** Uniform manifold approximation and projection (UMAP) of neurons isolated from the superficial cortical layers (L1, L2/3, and L4), based on the integrative non-negative matrix factorization (iNMF) vectors calculated from a shared projection of our data and a reference dataset.25 Major cell groups are labeled, and inferred cell type identity of L2/3 cells are color coded. Plot order is randomized, except for the L2/3 Rrad cell type that is plotted in the foreground due to its relative scarcity.
-**(B)** The L2/3 cluster with cells expressing one or more UMIs corresponding to Adamts2 highlighted. Note, the expression of Adamts2 overlaps with the Adamts2 cell type shown in (A), but the Adamts2 cell type is defined by the expression of a set of different genes of which Adamts2 is just one.
-**(C)** As in **(B)**, but for Agmat.
-**(D)** As in **(B)**, but for Rrad.
+***
 
 <p align="center">
 <img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/bootstrap_main.png" height=400>
@@ -72,6 +71,38 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 **(D)** As in **(C)**, but for the L2/3 Agmat cell type.
 **(E)** As in **(C)**, but for the L2/3 Rrad cell type.
 
+***
+
+<p align="center">
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/figure_s2.png" height= 600>
+</p>
+
+### Cellular responses to mismatch, running and grating onsets compared to their fluorescence ratio after photoconversion during mismatch.
+
+**(A)** Dot plot of selected marker genes for each of the major cell groups in Figure 2A (with a cumulative population size greater than 300 cells across all samples). Dot size represents the percentage of cells expressing each marker while the color represents the average normalized expression value. Exc.: excitatory neurons, Inh.: inhibitory neurons, Oligo.: Oligodendrocytes, IT: intratelencephalic neurons. 
+**(B)** UMAP plot of L2/3 neurons in the reference dataset (Tasic et al., 2018) with the three L2/3 cell types (Adamts2, Agmat, and Rrad) marked as they were defined there.  
+**(C)** A UMAP plot of L2/3 excitatory neurons collected using photoconversion on mismatch. Low, intermediate, and high photoconversion groups are labelled as green, gray and red, respectively.  
+**(D)** As in **B**, but for photoconversion during gratings. 
+**(E)** A density plot for the high photoconversion group collected using photoconversion on mismatch, calculated based on the UMAP plot shown in **B**. 
+**(F)** A density plot for the high photoconversion group collected using photoconversion on gratings, calculated based on the UMAP plot shown in **C**. 
+**(G)** A density plot of cells expressing at least one copy of Adamts2 (data as in Figure 2B). 
+**(H)** As in **E**, but for Baz1a. 
+
+***
+
+<p align="center">
+<img src="https://github.com/sean-otoole/scell_otoole_2023/blob/main/images/figure_s3.png" height= 600>
+</p>
+
+### Abundance of major cell groups and L2/3 excitatory types and enrichment analysis for inhibitory neuron types. Related to Figures 2-4. 
+
+**(A)** Abundance of each major cell group as shown in Figure 2A, across the three photoconversion groups and the three photoconversion types. mm: Mismatch; run: Running onsets; vis: Grating onsets; 1: Low photoconversion group; 2: Intermediate photoconversion group; 3: High photoconversion group. 
+**(B)** Enrichment for the Lamp5 cell type across photoconversion and labeling conditions. Z-score values are displayed for visuomotor mismatch (mismatch), running onset (running), and grating onset when stationary (grating) labeling experiments. Enrichment is calculated relative to the major inhibitory neuron groups only. 
+**(C)** As in **B**, but for the Pvalb cell type. 
+**(D)** As in **B**, but for the Sst cell type. 
+**(E)** As in **B**, but for the Vip cell type.  
+
+***
 
 ### Methods
 
