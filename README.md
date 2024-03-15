@@ -1,4 +1,4 @@
-# Single-cell RNA-seqencing analysis of functionally labelled neuronal populations:
+# Single-cell RNA-sequencing analysis of functionally labelled neuronal populations:
 
 This repository contains the single-cell RNA-sequencing code I have written for my publication entitled: [Molecularly targetable cell types in mouse visual cortex have distinguishable prediction error responses](https://www.cell.com/neuron/pdf/S0896-6273(23)00626-8.pdf). This README contains modified excerpts from that study as well as descriptions for each individual piece of code.
 
