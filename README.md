@@ -10,8 +10,6 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 
 ┌── R_figs_master.r/                                : pipeline control
 ├── images/                                         : contains example images used for explanations within the README
-│   └── XXX.png
-│   └── XXX.png
 |── generate_allen_data.r                           : formats refernce dataset
 ├── preprocess.r/                                   : processes countfiles from cellrnager
 ├── merge_and_split.r                               : switching sample formats, normalization and merging files into a single object
