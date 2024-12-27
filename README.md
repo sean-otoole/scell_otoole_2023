@@ -13,7 +13,7 @@ This repository contains the single-cell RNA-sequencing code I have written for 
 |── generate_allen_data.r                           : formats refernce dataset
 ├── preprocess.r/                                   : processes countfiles from cellrnager
 ├── merge_and_split.r                               : switching sample formats, normalization and merging files into a single object
-├──  feature_selection_and_correction.r             : performing feature selection, adding chemistry information,feature exclusion and GLM correction
+├── feature_selection_and_correction.r              : performing feature selection, adding chemistry information,feature exclusion and GLM correction
 ├── perform_liger.r                                 : non-negative matrix factorization with liger for sample integration
 ├── calculate_nearest_neighbors.r                   : cell group identification with weighted nearest neigbor
 ├── filter_sce.r                                    : performing cluster exclusion and distant neighbor exclusion 
